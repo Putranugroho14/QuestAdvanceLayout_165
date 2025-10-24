@@ -50,7 +50,11 @@ fun ProfileScreen() {
         )
         Spacer(modifier = Modifier.height(16.dp))
 
-
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        )
 
 
 
