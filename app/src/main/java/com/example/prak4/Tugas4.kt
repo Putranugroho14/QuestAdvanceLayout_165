@@ -78,7 +78,12 @@ fun ProfileScreen() {
         )
         Spacer(modifier = Modifier.height(16.dp))
 
-
+        Text(
+            text = stringResource(id = R.string.user_job_title),
+            fontSize = 14.sp,
+            color = TextSecondary,
+            modifier = Modifier.padding(horizontal = 32.dp)
+        )
 
 
 
