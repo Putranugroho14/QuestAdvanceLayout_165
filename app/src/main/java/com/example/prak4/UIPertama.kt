@@ -13,7 +13,11 @@ fun ActivitasPertama(modifier: Modifier){
             .fillMaxSize(),
         horizontalAligment = Aligment.CenterHorizontally
     ){
-        T
+        Text(
+            text = stringResource(id = R.string.prodi),
+            fontsize = 35.sp,
+            fontWeight = fontWeight.Bold
+        )
 
 
 
