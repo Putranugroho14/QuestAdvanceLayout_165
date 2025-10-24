@@ -37,8 +37,17 @@ fun ProfileScreen() {
             .background(PrimaryBackground)
             .padding(top = 48.dp, bottom = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
 
+        Image(
+            painter = painterResource(id = R.drawable.fp),
+            contentDescription = "Profile Picture",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .size(120.dp)
+                .clip(CircleShape)
+                .background(Color.White)
+        )
 
 
 
