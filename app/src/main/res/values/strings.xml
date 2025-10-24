@@ -1,8 +1,13 @@
 <resources>
-    <string name="app_name">My UIPertama</string>
-    <string name="prodi">Teknologi Informasi</string>
-    <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
-    <string name="nama">Bambang Sumantri</string>
-    <string name="alamat">Turi, Sleman</string>
-    <string name="copy">copyright, 2025</string>
+    <string name="app_name">Quest Advance Layout</string>
+
+    <string name="user_name">Putra Nugroho</string>
+    <string name="user_handle">\@putra\_Nugroho</string>
+    <string name="user_job_title">Saya seorang mahasiswa ti </string>
+
+    <string name="menu_privacy">Privacy</string>
+    <string name="menu_transaction">Riwayat Transaksi</string>
+    <string name="menu_settings">Pengaturan</string>
+
+    <string name="copyright_profile">© 2025 Putra Nugroho</string>
 </resources>
