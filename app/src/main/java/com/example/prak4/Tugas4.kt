@@ -29,5 +29,35 @@ import com.example.prak4.ui.theme.CopyrightText
 import com.example.prak4.ui.theme.SocialIconBg
 
 
+@Composable
+fun ProfileScreen() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(PrimaryBackground)
+            .padding(top = 48.dp, bottom = 16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
 
 }
