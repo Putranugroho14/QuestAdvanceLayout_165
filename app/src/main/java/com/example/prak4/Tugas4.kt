@@ -63,7 +63,7 @@ fun ProfileScreen() {
             Spacer(modifier = Modifier.width(8.dp))
             SocialMediaIcon(iconResId = R.drawable.link)
         }
-
+        Spacer(modifier = Modifier.height(24.dp))
 
 
 
