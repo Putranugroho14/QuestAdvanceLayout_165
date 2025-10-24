@@ -112,7 +112,10 @@ fun ProfileScreen() {
     }
 }
 
+@Composable
+fun SocialMediaIcon(iconResId: Int) {
 
+}
 
 
 }
