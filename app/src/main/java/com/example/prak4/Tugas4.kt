@@ -65,7 +65,12 @@ fun ProfileScreen() {
         }
         Spacer(modifier = Modifier.height(24.dp))
 
-
+        Text(
+            text = stringResource(id = R.string.user_name),
+            fontSize = 28.sp,
+            fontWeight = FontWeight.Bold,
+            color = TextPrimary
+        )
 
 
 
