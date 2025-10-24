@@ -84,7 +84,7 @@ fun ProfileScreen() {
             color = TextSecondary,
             modifier = Modifier.padding(horizontal = 32.dp)
         )
-
+        Spacer(modifier = Modifier.height(32.dp))
 
 
 
