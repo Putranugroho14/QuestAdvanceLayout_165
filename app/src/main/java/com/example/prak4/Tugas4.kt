@@ -86,7 +86,10 @@ fun ProfileScreen() {
         )
         Spacer(modifier = Modifier.height(32.dp))
 
-
+        MenuItemCard(
+            iconResId = R.drawable.privacy,
+            text = stringResource(id = R.string.menu_privacy)
+        )
 
 
 
