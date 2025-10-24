@@ -71,7 +71,11 @@ fun ProfileScreen() {
             fontWeight = FontWeight.Bold,
             color = TextPrimary
         )
-
+        Text(
+            text = stringResource(id = R.string.user_handle),
+            fontSize = 16.sp,
+            color = TextSecondary
+        )
 
 
 
