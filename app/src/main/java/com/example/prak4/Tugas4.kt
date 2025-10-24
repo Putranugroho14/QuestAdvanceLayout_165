@@ -114,8 +114,68 @@ fun ProfileScreen() {
 
 @Composable
 fun SocialMediaIcon(iconResId: Int) {
-
+    Box(
+        modifier = Modifier
+            .size(40.dp)
+            .clip(CircleShape)
+            .background(SocialIconBg),
+        contentAlignment = Alignment.Center
+    ) {
+        Image(
+            painter = painterResource(id = iconResId),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.size(24.dp)
+        )
+    }
 }
 
+@Composable
+fun MenuItemCard(@androidx.annotation.DrawableRes iconResId: Int, text: String) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth(0.9f)
+            .height(60.dp),
+        colors = CardDefaults.cardColors(containerColor = MenuCardBg),
+        shape = RoundedCornerShape(12.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Box(
+                    modifier = Modifier
+                        .size(40.dp)
+                        .clip(CircleShape)
+                        .background(IconCircleBg),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        painter = painterResource(id = iconResId),
+                        contentDescription = null,
+                        tint = TextPrimary,
+                        modifier = Modifier.size(24.dp)
+                    )
+                }
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = text,
+                    fontSize = 18.sp,
+                    color = TextPrimary
+                )
+            }
 
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.ArrowForwardIos,
+                contentDescription = "Next",
+                tint = ArrowIconTint,
+                modifier = Modifier.size(20.dp)
+            )
+        }
+    }
 }
