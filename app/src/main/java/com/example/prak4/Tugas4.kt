@@ -95,6 +95,11 @@ fun ProfileScreen() {
             iconResId = R.drawable.transaction,
             text = stringResource(id = R.string.menu_transaction)
         )
+        Spacer(modifier = Modifier.height(12.dp))
+        MenuItemCard(
+            iconResId = R.drawable.settings,
+            text = stringResource(id = R.string.menu_settings)
+        )
 
 
 }
