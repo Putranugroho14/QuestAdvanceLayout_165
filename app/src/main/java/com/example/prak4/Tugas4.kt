@@ -76,7 +76,7 @@ fun ProfileScreen() {
             fontSize = 16.sp,
             color = TextSecondary
         )
-
+        Spacer(modifier = Modifier.height(16.dp))
 
 
 
