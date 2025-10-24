@@ -1,7 +1,7 @@
-//noinspection SuspiciousImport
-import android.R
-import android.media.Image
-import android.provider.MediaStore
+
+package com.example.prak4
+
+import android.inputmethodservice.Keyboard
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -24,20 +24,21 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+
+
 @Composable
 fun ActivitasPertama(modifier: Modifier){
-    Column(
-        modifier = Modifier
-            .padding(top = 100.dp)
-            .fillMaxSize(),
+    Column(modifier= Modifier
+        .padding(top=100.dp)
+        .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-
-    ){
+    ) {
         Text(
-            text = R.stringResource(id = R.string.prodi),
+            text = stringResource(id= R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold
         )
@@ -46,17 +47,17 @@ fun ActivitasPertama(modifier: Modifier){
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(height = 25.dp))
-
         Card(
             modifier = Modifier
                 .fillMaxWidth(fraction = 1f)
                 .padding(all = 12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray*
+                containerColor = Color.DarkGray
             )
-        ) {
+        )
+        {
             Row() {
-                val gambar = painterResource(R.drawable.logoumy)
+                val gambar = painterResource(id = R.drawable.gambar)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -65,7 +66,6 @@ fun ActivitasPertama(modifier: Modifier){
                         .padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(width = 30.dp))
-
                 Column() {
                     Text(
                         text = stringResource(id = R.string.nama),
@@ -75,9 +75,9 @@ fun ActivitasPertama(modifier: Modifier){
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        text = stringResource(id = R.string.alamat),
+                        stringResource(R.string.alamat),
                         fontSize = 20.sp,
-                        color = Color.White,
+                        color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
@@ -88,7 +88,7 @@ fun ActivitasPertama(modifier: Modifier){
                 .fillMaxSize()
         ){
             Text(
-                text = stringResource(id = R.string.copy),
+                stringResource(R.string.copy),
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)

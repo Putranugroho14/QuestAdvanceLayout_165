@@ -1,5 +1,6 @@
-    package com.example.prak4
 
+package com.example.prak4
+import com.example.prak4.ActivitasPertama
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,8 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             Prak4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+
+                    ActivitasPertama(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -30,18 +31,11 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun GreetingPreview() {
+fun ActivitasPertamaPreview() {
     Prak4Theme {
-        Greeting("Android")
+        ActivitasPertama(modifier = Modifier)
     }
 }
